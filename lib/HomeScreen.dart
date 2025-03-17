@@ -19,7 +19,6 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Search Bar
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: TextField(
@@ -33,7 +32,6 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
 
-            // Hero Banner
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: ClipRRect(
@@ -59,13 +57,10 @@ class HomeScreen extends StatelessWidget {
 
             SizedBox(height: 20),
 
-            // Categories Section
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Text("Categories", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
             ),
-
-            // Horizontal Scrollable Category List
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               padding: EdgeInsets.all(10),
@@ -74,7 +69,6 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
 
-            // New Product Section
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Row(
@@ -86,7 +80,6 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
 
-            // Product Grid
             GridView.builder(
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
@@ -98,7 +91,6 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
 
-      // Bottom Navigation
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: [
@@ -112,10 +104,8 @@ class HomeScreen extends StatelessWidget {
     );
   }
   
-  // Closing brace for HomeScreen class
   }
 
-  // Category Item Widget
   Widget categoryItem(BuildContext context, String categoryName) {
     return GestureDetector(
       onTap: () {

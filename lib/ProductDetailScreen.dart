@@ -39,7 +39,6 @@ class ProductDetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Product Image
             Container(
               width: double.infinity,
               height: 250,
@@ -53,7 +52,6 @@ class ProductDetailScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Product Name & Price
                   Text(productName, style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
                   SizedBox(height: 5),
                   Row(
@@ -67,7 +65,6 @@ class ProductDetailScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 15),
 
-                  // Artist Info
                   Row(
                     children: [
                       CircleAvatar(
@@ -86,11 +83,9 @@ class ProductDetailScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 20),
 
-                  // Product Description
                   Text(description, style: TextStyle(fontSize: 14, color: Colors.grey)),
                   SizedBox(height: 20),
 
-                  // Add to Cart Button
                   Center(
                     child: ElevatedButton(
                       onPressed: () {},
@@ -103,7 +98,6 @@ class ProductDetailScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 20),
 
-                  // Additional Details
                   Card(
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                     elevation: 2,
@@ -129,7 +123,6 @@ class ProductDetailScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 20),
 
-                  // Delivery Details
                   Card(
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                     elevation: 2,

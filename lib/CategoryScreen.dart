@@ -36,16 +36,16 @@ class CategoryScreen extends StatelessWidget {
         context,
         MaterialPageRoute(
           builder: (context) => ProductDetailScreen(
-            productName: "Old Mans",
-            imageUrl: "sample_product.jpg",
-            artistName: "Darshan Raval",
-            price: 25,
-            oldPrice: 50,
-            description:
-                "In a sunlit corner of a cluttered attic, an old man sits with delicate brushes and a palette of memories...",
-            category: "Water Color",
-            extra: "Black Wood Frame",
-            deliveryDetails: "Home Delivery Available, Advance Deposit 30%",
+        productName: "Old Mans",
+        imageUrl: "sample_product.jpg",
+        artistName: "Darshan Raval",
+        price: 25,
+        oldPrice: 50,
+        description:
+            "In a sunlit corner of a cluttered attic, an old man sits with delicate brushes and a palette of memories...",
+        category: "Water Color",
+        extra: "Black Wood Frame",
+        deliveryDetails: "Home Delivery Available, Advance Deposit 30%",
           ),
         ),
       );

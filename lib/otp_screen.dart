@@ -20,7 +20,6 @@ class _OTPScreenState extends State<OTPScreen> {
 
     String enteredOTP = otpController.text.trim();
     
-    // Replace with actual OTP validation logic (backend call)
     bool isOTPValid = await fakeOTPVerification(enteredOTP);
 
     setState(() {
@@ -28,13 +27,11 @@ class _OTPScreenState extends State<OTPScreen> {
     });
 
     if (isOTPValid) {
-      // Navigate to the success screen
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => OTPVerificationSuccessScreen()),
       );
     } else {
-      // Show error message
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text("Invalid OTP! Please try again."))
       );
@@ -42,8 +39,8 @@ class _OTPScreenState extends State<OTPScreen> {
   }
 
   Future<bool> fakeOTPVerification(String otp) async {
-    await Future.delayed(Duration(seconds: 2)); // Simulate network delay
-    return otp == "622222"; // Replace with backend validation
+    await Future.delayed(Duration(seconds: 2));
+    return otp == "123456";
   }
 
   @override
@@ -97,7 +94,6 @@ class _OTPScreenState extends State<OTPScreen> {
   }
 }
 
-// OTP Success Page
 class OTPVerificationSuccessScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -116,7 +112,6 @@ class OTPVerificationSuccessScreen extends StatelessWidget {
             SizedBox(height: 10),
             ElevatedButton(
               onPressed: () {
-                // Navigate to the home screen or dashboard
                 Navigator.pushReplacementNamed(context, "/home");
               },
               child: Text("Continue"),

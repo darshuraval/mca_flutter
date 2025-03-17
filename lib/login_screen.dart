@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'signup_screen.dart'; // Import SignUpScreen
+import 'signup_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
@@ -77,7 +77,6 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: 10),
             TextButton(
               onPressed: () {
-                // Navigate to SignUpScreen
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => SignUpScreen()),

@@ -1,12 +1,5 @@
 import 'package:flutter/material.dart';
 
-// void main() {
-//   runApp(MaterialApp(
-//     debugShowCheckedModeBanner: false,
-//     home: SignUpScreen(),
-//   ));
-// }
-
 class SignUpScreen extends StatefulWidget {
   @override
   _SignUpScreenState createState() => _SignUpScreenState();
